@@ -1,0 +1,108 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+body{background-color: #000; overflow-x: hidden;}
+*{margin: 0; padding: 0; font-family: 'Noto Sans KR', sans-serif;}
+ul{list-style: none;}
+a{text-decoration: none; color: #000;}
+
+.exp{width: 100%; padding-top: 200px; position: relative; color: #fff;}
+.exp .exp-wrap{max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between;}
+.exp .exp-title{margin-top: 170px;  margin-right: 50px;}
+.exp .exp-title h3{color: #fff; text-align: right; font-size: 70px;}
+.exp .exp-title .exp-line{width: 60%; height: 2px; background-color: #FF0000; float: right;}
+.exp .exp-img img{width: 100%;}
+
+.exp .content-exp{width: 90%; margin: 0 auto; padding-top: 270px;}
+/* .exp .exp-content1{display: flex; justify-content: space-between;} */
+.exp .exp-content1{display: grid; grid-template-columns: 29.3% 70%;}
+.exp .exp-content1 .exp-txt{margin-left: 100px;}
+.exp .exp-content1 .exp-txt h3{font-size: 65px; font-weight: bold;}
+.exp .exp-content1 .exp-txt .content-line{width: 18%; height: 2px; background-color: #FF0000; margin-bottom: 20px;}
+.exp .exp-content1 .exp-txt p{font-size: 20px;}
+.exp .exp-content1 img{width: 100%;}
+.exp .exp-content2{margin-top: 50px; display: flex; justify-content: space-between;}
+.exp .exp-content2 img{width: 29.3%;}
+
+.exp .exp-content3{margin-top: 200px; display: grid; grid-template-columns: 70% 30%;}
+.exp .exp-content3 img{width: 100%;}
+.exp .exp-content3 .exp-txt2{margin-right: 100px;}
+.exp .exp-content3 .exp-txt2 h3{font-size: 65px; font-weight: bold; line-height: 70px;}
+.exp .exp-content3 .exp-txt2 .content-line2{width: 10%; height: 2px; background-color: #FF0000; margin: 10px 0 20px 0px;}
+.exp .exp-content3 .exp-txt2 p{font-size: 20px;}
+.exp .exp-content4{margin-top: 50px; display: flex; justify-content: space-between;}
+.exp .exp-content4 img{width: 29.3%;}
+
+.exp .exp-content5{display: grid; grid-template-columns: 29.3% 70%; margin-top: 200px; margin-bottom: 100px;}
+.exp .exp-content5 .exp-work{margin-left: 100px;}
+.exp .exp-content5 .exp-work h3{font-size: 65px; font-weight: bold;}
+.exp .exp-content5 .exp-work .content-line3{width: 15% ; height: 2px; background-color: #FF0000; margin-bottom: 20px;}
+.exp .exp-content5 .exp-work p{font-size: 20px;}
+.exp .exp-content5 img{width: 100%;}
+
+@media screen and (min-width: 641px) and (max-width: 1280px){
+    .exp .exp-wrap{max-width: 97%;}
+    .exp .exp-title{margin-right: 40px; margin-top: 100px;}
+    .exp .exp-title h3{font-size: 60px; margin-left: 80px;}
+    .exp .exp-title .exp-line{width: 70%;}
+    .exp .exp-img img{width: 80%;}
+
+    .exp .exp-content1,
+    .exp .exp-content3,
+    .exp .exp-content5{display: grid; grid-template-columns: 97%;}
+    .exp .exp-content1 .exp-txt,
+    .exp .exp-content5 .exp-work{margin-left: 0px; grid-row: 1/3; margin-bottom: 20px;}
+    .exp .exp-content1 .exp-txt p,
+    .exp .exp-content3 .exp-txt2 p,
+    .exp .exp-content5 .exp-work p{font-size: 16px;}
+    .exp .exp-content1 .exp-txt h3,
+    .exp .exp-content5 .exp-work h3{font-size: 40px; margin-top: 20px;}
+
+    .exp .exp-content1 .exp-txt .content-line{width: 11%; margin-bottom: 80px;}
+    .exp .exp-content3 .exp-txt2 .content-line2{width: 7%; margin-bottom: 80px;}
+    .exp .exp-content5 .exp-work .content-line3{width: 10%; margin-bottom: 80px;}
+
+    .exp .exp-content3 .exp-txt2 h3{margin-top: 0; font-size: 40px; line-height: 45px;}
+    .exp .exp-content3 .exp-txt2{margin-right: 0px;  grid-row: 1/3; margin-bottom: 20px;}
+}
+
+@media screen and (max-width: 1000px){
+    .exp{padding-top: 0;}
+    .exp .exp-wrap{display: grid; justify-content: space-evenly;}
+    .exp .exp-title h3{font-size: 46px; margin-left: 80px; text-align: left;}
+    .exp .exp-img{margin-top: 50px; margin-left: 10px;}
+    .exp .exp-img img{width: 98%;}
+    .exp .exp-title .exp-line{width: 50%; height: 2px; background-color: #FF0000; float: left; margin-left: 80px;}
+
+
+    .exp .content-exp{padding-top: 100px;}
+    .exp .exp-content1 .exp-txt,
+    .exp .exp-content3 .exp-txt2,
+    .exp .exp-content5 .exp-work{grid-row: 1/3; margin-bottom: 20px;}
+    .exp .exp-content3 .exp-txt2 h3{line-height: 45px;}
+    .exp .exp-content3 .exp-txt2{margin-right: 0px;}
+    
+}
+
+
+@media screen and (max-width: 640px){
+    .exp{padding-top: 0px; margin-top: -50px;}
+    .exp .exp-content1,
+    .exp .exp-content3,
+    .exp .exp-content5{display: grid; grid-template-columns: 97%;}
+    .exp .exp-content1 .exp-txt,
+    .exp .exp-content3 .exp-txt2,
+    .exp .exp-content5 .exp-work{margin-left: 0px;}
+    .exp .exp-content1 .exp-txt p,
+    .exp .exp-content3 .exp-txt2 p,
+    .exp .exp-content5 .exp-work p{font-size: 16px;}
+    .exp .exp-content1 .exp-txt h3,
+    .exp .exp-content3 .exp-txt2 h3,
+    .exp .exp-content5 .exp-work h3{font-size: 36px; font-weight: bold; margin-top: 20px;}
+    .exp .exp-content1 .exp-txt .content-line,
+    .exp .exp-content3 .exp-txt2 .content-line2,
+    .exp .exp-content5 .exp-work .content-line3{width: 11%; height: 2px; margin-bottom: 20px; margin-top: 15px;}
+    .exp .exp-content5 .exp-work .content-line3{margin-top: 5px;}
+    .exp .exp-content1 .exp-txt .content-line{margin-bottom: 20px; margin-top: 5px;}
+
+    .exp .exp-content3 .exp-txt2 h3{line-height: 25px;}
+}

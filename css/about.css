@@ -1,0 +1,163 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+body{background-color: #000; overflow-x: hidden;}
+*{margin: 0; padding: 0; font-family: 'Noto Sans KR', sans-serif;}
+ul{list-style: none;}
+a{text-decoration: none; color: #000;}
+
+.content{color: #fff; width: 100%; margin-top: 50px;}
+.content .content-wrap{max-width: 1700px; margin: 0 auto;}
+.content .title h3{font-size: 44.27px; color: #fff; padding-bottom: 20px;}
+.content .profile-wrap{max-width: 1700px; margin: 0 auto; position: relative;}
+.content .porfile-img {max-width: 100%;}
+.content .porfile-img ul li{display: none;}
+.content .profile-txt .txt-wrap{display: flex;}
+.content .profile-txt .txt-wrap .txt-content{width: 100%; position: relative; padding-left: 50px;}
+.content .profile-txt .txt-wrap .txt-content .txt-1{display: flex; justify-content: space-between;}
+
+.txt-content .txt-1 ul:nth-child(1) li:nth-child(1){font-size: 34px; font-weight: bold;}
+.txt-content .txt-1 ul li{font-size: 19px; font-weight: 300;}
+.txt-content .txt-1 ul:nth-child(1) li{font-size: 28px;}
+.txt-content .txt-1 ul:nth-child(2) li{text-align: right;}
+
+.content-txt{
+    margin-top: 80px;
+    max-width: 100%;
+    /* float: left; */
+    display: flex;
+
+}
+.content-txt .txt-12{max-width: 50%;}
+.content-txt .txt-12 .txt-3,
+.content-txt .txt-12 .txt-4{max-width: 1700px;}
+
+
+.content .profile-txt .skill{
+    max-width: 1700px;
+}
+.content .profile-txt .skill-1{
+    display: flex;
+    max-width: 550px;
+    justify-content: space-between;
+    margin-left: 10px;
+}
+.content .profile-txt .skill-2{
+    max-width: 550px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10px;
+}
+.content .profile-txt .skill .skill-2 > div,
+.content .profile-txt .skill .skill-1 > div{
+    max-width: 150px;
+}
+.content .profile-txt .skill .skill-1 > div{
+    margin-right: 20px;
+}
+.content .profile-txt .skill .skill-2 > div{
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.content .profile-txt .skill .skill-1 p,
+.content .profile-txt .skill .skill-2 p{text-align: center; padding: 5px 0;}
+.content .profile-txt .skill ul li p{font-size: 15px;  line-height: 25px; font-weight: 300;}
+
+.content .profile-txt .skill .skill-2 .progress:nth-child(1){margin-left: 70px;}
+.content .profile-txt .skill .skill-2 .progress:nth-child(2){ margin-right: 70px;}
+
+
+
+.txt-content{max-width: 1700px;}
+.txt-content .txt-11 ul:nth-child(1){
+    width: 100%;
+}
+.txt-content .txt-11 ul:nth-child(2){
+    text-align: right;
+    margin-left: 80px
+}
+
+.txt-content .txt-11 ul:nth-child(1) li:nth-child(1){font-size: 34px; font-weight: bold;}
+.txt-content .txt-11 ul li{font-size: 19px; font-weight: 300;}
+.txt-content .txt-11 ul:nth-child(1) li{font-size: 28px; max-width: 100%;}
+.txt-content .txt-11 ul:nth-child(2) li{max-width: 100%; float: right;}
+.content .content-txt .txt-4 ul li h4{margin-top: 120px;}
+.content .content-txt .txt-3 ul li h4,
+.content .content-txt .txt-4 ul li h4{font-size: 24px; color: #FF1D25; padding-bottom: 30px;}
+.content .content-txt .txt-4 ul li{font-size: 27px; font-weight: 400;}
+.content .skill h4{font-size: 24px; color: #FF1D25;}
+element{top: 60%;}
+
+.txt-content .txt-12 .txt-3 ul{
+    width: 100%;
+    padding-right: 500px;
+}
+
+.content .txt-13 .skill h4::after{content: ""; height: 500px; width: 1px; background-color: #FF1D25; position: absolute; right: 50%;}
+
+
+@media screen and (min-width: 641px) and (max-width: 1500px){
+    .content .content-wrap,
+    .content .profile-wrap{max-width: 1280px;}
+    .content .porfile-img img{width: 400px;}
+    .content .content-txt .txt-3 ul li h4,
+    .content .content-txt .txt-4 ul li h4{font-size: 20px; color: #FF1D25; padding-bottom: 30px;}
+    .content .content-txt .txt-3 ul li span{font-size: 13px; font-weight: 400;}
+    .content .content-txt .txt-4 ul li{font-size: 20px; font-weight: 400;}
+    .content .skill h4{font-size: 20px; color: #FF1D25;}
+    .content .profile-txt .skill ul li p{font-size: 13px;  line-height: 25px; font-weight: 300;}
+    .txt-content .txt-1 ul:nth-child(1) li:nth-child(1){font-size: 24px; font-weight: bold;}
+    .txt-content .txt-1 ul li{font-size: 15px; font-weight: 300;}
+    .txt-content .txt-1 ul:nth-child(1) li{font-size: 18px;}
+    .content-txt{margin-top: 100px;}
+    .content .content-txt .txt-4 ul li h4{margin-top: 100px;}
+    .content .profile-txt .skill-2 > div{max-width: 50%;}
+    .content .title h3{font-size: 35px; color: #fff; padding-bottom: 20px;}
+    .content .porfile-img ul li{display: none;}
+}
+@media screen and (min-width: 641px) and (max-width: 1280px){
+    /* .content .content-txt .txt-3 ul li span{font-size: 15px; font-weight: 400;} */
+    .content .porfile-img img{width: 300px;}
+    .content .porfile-img ul li:nth-child(1){ display: block; font-size: 34px; font-weight: bold;}
+    .content .porfile-img ul li{display: block; font-size: 27px;}
+
+    .content .txt-13 .skill h4::after{content: ""; display: none;}
+    .content .title h3{font-size: 30px; color: #fff; padding-bottom: 20px;}
+    .txt-content .txt-1 ul:nth-child(1) li{display: none;}
+    .txt-content .txt-1 ul:nth-child(2) li{text-align: left; float: left; width: 100%;}
+    .txt-content .txt-1 ul:nth-child(2) li{width: 100%;}
+    .content .profile-txt .txt-wrap .content-txt{flex-wrap: wrap;}
+    .content .profile-txt .txt-wrap .content-txt skill{padding-top: 50px;}
+    .content .content-wrap,
+    .content .profile-wrap{max-width: 1000px; margin: 0 auto;}
+    .content .content-txt .txt-3 ul{max-width: 1000px; padding-right: 0;}
+    .content .content-txt .txt-12{max-width: 100%;}
+    .skill h4{margin-top: 50px;}
+    
+
+}
+@media screen and (max-width: 640px){
+    .content{max-width: 640px;}
+    .content .porfile-img{text-align: center; max-width: 500px; margin: 0 auto;}
+    .content .porfile-img img{width: 300px; padding-bottom: 20px;}
+    .content .porfile-img ul li:nth-child(1){ display: block; font-size: 34px; font-weight: bold;}
+    .content .porfile-img ul li{display: block; font-size: 27px;}
+    .txt-content .txt-1 ul li{display: none;}
+    .content .txt-13 .skill h4::after{content: ""; display: none;}
+    .content .profile-txt .txt-wrap{flex-wrap: wrap;}
+    .content .profile-txt .txt-wrap .content-txt{flex-wrap: wrap;}
+    .content .profile-txt .txt-wrap .content-txt skill{padding-top: 50px;}
+    .content .content-wrap,
+    .content .profile-wrap{max-width: 1000px; margin: 0 auto;}
+    .content .content-txt .txt-3 ul{max-width: 1000px; padding-right: 0;}
+    .content .content-txt .txt-12{max-width: 100%;}
+    .skill h4{margin-top: 50px; margin-bottom: 20px;}
+    .content .profile-txt .skill ul li p{font-size: 13px;  line-height: 25px; font-weight: 300;}
+    .content{text-align: center;}
+    .content .content-txt{display: block;}
+    .content .profile-txt .txt-wrap .txt-content{padding-left: 0;}
+    .content .content-txt .txt-3 ul li h4, .content .content-txt .txt-4 ul li h4{margin-top: 50px;}
+    .content .content-txt .txt-13 .skill ul{margin-bottom: 50px;}
+    .content .content-txt .txt-13 .skill .skill-1,
+    .content .content-txt .txt-13 .skill .skill-2{margin-left: 30px;}
+}
