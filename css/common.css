@@ -40,6 +40,8 @@ a{text-decoration: none; color: #000;}
 .window-content i{font-size: 3vw; cursor: pointer; color: #000; position: absolute; right: 50px; top: 20px;}
 .window-content img{width: 100%;}
 
+.aside{position: fixed; width: 50px; height: 50px; background-color: #fff; right: 20px; bottom: 20px; cursor: pointer; border-radius: 50px; display: none;}
+
 @media screen and (min-width: 641px) and (max-width: 1500px) {
     /* .header{padding-left: 20px;}
     .header .nav ul li a{font-size: 16px; display: inline-block; font-weight: 400;}
@@ -50,6 +52,8 @@ a{text-decoration: none; color: #000;}
 @media screen and (max-width: 1024px){
     .header .nav{display: none;}
     .m-btn{display: block; z-index: 999;}
+    .aside,
+    .aside img{width: 40px; height: 40px;}
 }
 @media screen and (max-width: 640px){
     .header .nav{display: none;}
@@ -57,5 +61,14 @@ a{text-decoration: none; color: #000;}
     .header .logo a img{width: 100%;} */
     .m-btn{display: block; z-index: 999;}
     .window-content{width: 100%;}
+    
+    .exp,
+    .design{overflow: hidden;}
     .window-content i{right: 20px;}
+
+    .header .logo a img{height: 40px;}
+
+    .aside,
+    .aside img{width: 0; height: 0;}
+
 }
